@@ -1,7 +1,7 @@
 #Assignment 2
 
 ##Problem 1
-####Write a C++ program to sort an array of numbers in an ascending order and descending order based on user’s choice and display them.
+####Write a C++ program to sort an array of numbers in an ascending order and descending order based on userâ€™s choice and display them.
 
 ```c++
 
@@ -25,7 +25,7 @@
 
 ```
 ##c)
-###Declare and implement a function CreateMatrix(...) that returns a pointer to an array of arrays of n × m floats.
+###Declare and implement a function CreateMatrix(...) that returns a pointer to an array of arrays of n Ã— m floats.
 
 ##d)
 ###Declare and implement a function Deletematrix(...) that takes and deletes this kind of matrix.
