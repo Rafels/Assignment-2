@@ -1,12 +1,12 @@
-#Assignment 2
+# Assignment 2
 
-##Problem 1
-####Write a C++ program to sort an array of numbers in an ascending order and descending order based on user’s choice and display them.
+## Problem 1
+#### Write a C++ program to sort an array of numbers in an ascending order and descending order based on user’s choice and display them.
 
-In order to solve this problem, the program makes use of the *Algorithm* library wich provides the functions *sort* and *reverse*.
-The *sort* function is quite handy as it sorts all the values in an ascending order, ether it being characters or integer values. The *reverse* function then reverses the order, wich comes in hand when the program orders the values in a descending order.
+To solve this problem, the program makes use of the *Algorithm* library which provides the functions *sort* and *reverse*.
+The *sort* function is quite handy as it sorts all the values in an ascending order, ether it being characters or integer values. The *reverse* function then reverses the order, which comes in handy when the program orders the values in a descending order.
 In the start of the program prompts the user to enter the ten integer values, it then displays the values and asks the user in which order the values will be sorted.
-The result is then displayed. If the user enters a charachter the program will allert the user of a wrong input and quit.
+The result is then displayed. If the user enters a character the program will alert the user of a wrong input and quit.
 
 **The Code:**
 ```c++
@@ -81,7 +81,7 @@ Your array is now: 1 2 3 4 5 6 7 8 9 10
 ## Problem 2 ##
 #### Write a C++ program to sort string (name) in an alphabetical order. For example if a user enters a string "bye", then the output of the program will be "bey".
 
-This program uses the *string* and *algorithm* libraries in order to easily get the inputed string and then sort the charachters in ascending order. The *getline()* function uses an input, in this case *cin* and then gives the line to the string *Word*. By using the *.begin()* and *.end()* funtions the *sort* function can determine the start and end of the line that will be sorted.
+This program uses the *string* and *algorithm* libraries to easily get the inputted string and then sort the characters in ascending order. The *getline()* function uses an input, in this case *cin* and then gives the line to the string *Word*. By using the *.begin()* and *.end()* functions the *sort* function can determine the start and end of the line that will be sorted.
 
 **The Code:**
 ```c++
@@ -114,7 +114,7 @@ Hello, how are you?
 ## a)
 #### Declare and implement a function CreateArray(...) that returns a pointer to an array of n integers.
 
-In order to solve this problem the program uses a function which creates a pointer to an array. The array is created by using the *new* function, which will allocate a number of spaces for integer values, the created pointer will then point to the first adress of the array before being returned. The size of the array is determined by the user and used as an input when calling the function *CreateArray*. The output is only there to check if the input is correct and that the function has been called successfully.
+To solve this problem, the program uses a function which creates a pointer to an array. The array is created by using the *new* function, which will allocate several spaces for integer values, the created pointer will then point to the first address of the array before being returned. The size of the array is determined by the user and used as an input when calling the function *CreateArray*. The output is only there to check if the input is correct and that the function has been called successfully.
 
 **The Code:**
 ```c++
@@ -192,7 +192,7 @@ The address of the first value is now: 0x6a1958
 ## c)
 #### Declare and implement a function CreateMatrix(...) that returns a pointer to an array of arrays of n × m floats.
 
-This problem is solved by using the *new* function with a pointer to a pointer *pArray* in order to create an array of n-pointers. The array is then runned through a for-loop which creates an array of m-values for each of the pointer, this is also achieved by using the *new* function. The n x m size is determined and inputed by the user, and then used as an input when calling the *CreateMatrix* function.
+This problem is solved by using the *new* function with a pointer to a pointer *pArray* to create an array of n-pointers. The array is then run through a for-loop which creates an array of m-values for each of the pointer, this is also achieved by using the *new* function. The n x m size is determined and inputted by the user, and then used as an input when calling the *CreateMatrix* function.
 
 **The Code:**
 ```c++
@@ -237,7 +237,7 @@ The size of your Matrix is: 5 X 5 and the address of the first place is: 0xf8195
 ## d)
 #### Declare and implement a function Deletematrix(...) that takes and deletes this kind of matrix.
 
-In order to solve this problem the program first creates a 10x10 matrix in the same maner as the previous problem. The matrix is then used as an input in the *DeleteMatrix* function. The *DeleteMatrix* function uses a for-loop in order to delete each of the ten arrays in the matrix, it then uses the *delete* function on the pointer array. No result is printed as the is noe way of showing the memory de-allocation.
+To solve this problem, the program first creates a 10x10 matrix in the same manner as the previous problem. The matrix is then used as an input in the *DeleteMatrix* function. The *DeleteMatrix* function uses a for-loop to delete each of the ten arrays in the matrix, it then uses the *delete* function on the pointer array. No result is printed as there is no way of showing the memory de-allocation.
 
 
 **The Code:**
@@ -273,7 +273,7 @@ void DeleteMatrix(float** matrix)
 ## e)
 #### Declare and implement  a  function  DisplayMatrix(...)  that  displays  the  address  of  the matrix of floats in the memory and all its elements.
 
-This program uses the *CreateMatrix* function from the previous 3c problem. It uses the result pluss the n x m size as inputs for using the *DisplayMatrix* function. The function uses two for-loops with *i* and *j* as iterators, it then prints out each of the address in the matrix by using the iterators in the matrix. When each row has been printed out, the line ends in order to have a cleaner output.
+This program uses the *CreateMatrix* function from the previous 3c problem. It uses the result plus the n x m size as inputs for using the *DisplayMatrix* function. The function uses two for-loops with *i* and *j* as iterators, it then prints out each of the address in the matrix by using the iterators in the matrix. When each row has been printed out, the line ends to have a cleaner output.
 
 **The Code:**
 ```c++
@@ -342,7 +342,7 @@ The address of the Matrix are:
 ## a)
 #### Declare and implement a function DisplayPointerInfo(...) which displays on screen the address of the first element of an array represented by a pointer. If multiple elements of the array exist, then display the address of all the values represented by a pointer.
 
-This program lets the user choose the size of the array, the size is then used to create an array which points to the pointer *A*. The pointer and the size are then used as the input when calling the *DisplayPointerInfo* function. The function displays the adress of the first element in the array. Tt then runs through a for-loop, which uses the size as the limit, if the size is greater then one it will print out the remaining elements.
+This program lets the user choose the size of the array, the size is then used to create an array which points to the pointer *A*. The pointer and the size are then used as the input when calling the *DisplayPointerInfo* function. The function displays the address of the first element in the array. Tt then runs through a for-loop, which uses the size as the limit, if the size is greater than one it will print out the remaining elements.
 
 
 **The code**
@@ -386,8 +386,9 @@ void DisplayPointerInfo(int* arrayP, int m)
 ## b)
 #### To test the DisplayPointerInfo(...)function, declare two integer pointers a and b to dynamically allocate arrays of integers for n elements (n should be an input from the user). Array a will be filled with even numbers, and array b will be filled with odd numbers.
 
-This program uses the *DisplayPointerInfo* function and a new function *DisplayArrayValue* in order to check if the values are correct. 
-First the two pointers are created and an array is created for each of them with the same size, which has been given by the user. The *cstdlib* library is included in this program in order to use the *rand()*function, which will fill the arrays with even and odd numbers. A while-loop is used for each array, they run until the size of the array has been reached. For each iteration a random values is created and checked if it is either even or odd. If the if-statement is true then *i* is added one and the loop looks for the next value. The arrays address and values are then displayed. The *DisplayArrayValue* uses a simple for-loop to rund throught the array elements and display their values.
+This program uses the *DisplayPointerInfo* function and a new function *DisplayArrayValue* to check if the values are correct. 
+First the two pointers are created and an array is created for each of them with the same size, which has been given by the user. The *cstdlib* library is included in this program in order to use the *rand()*function, which will fill the arrays with even and odd numbers. A while-loop is used for each array, they run until the size of the array has been reached. For each iteration, a random value is created and checked if it is either even or odd. If the if-statement is true, then *i* is added one and the loop looks for the next value. The arrays address and values are then displayed. The *DisplayArrayValue* uses a simple for-loop to run through the array elements and display their values.
+
 
 **The code:**
 ```c++
@@ -495,7 +496,7 @@ The values of the array are:
 ## e)
 #### Delete the dynamic memory allocated to a using delete [ ].
 
-This problem is quite simply to do as I only followed the intructions given. In the first line inside main, the pointer i declared, in the next line the dynamic array is created with a size of 5. Then the values are given to each of the array elements. A for-loop is then used to print out the address of the elements, and converted using the *hex* function. The array is then deleted by using the *delete[]* function on the pointer.
+This problem is quite simply to do as I only followed the instructions given. In the first line inside main, the pointer is declared, in the next line the dynamic array is created with a size of 5. Then the values are given to each of the array elements. A for-loop is then used to print out the address of the elements, and converted using the *hex* function. The array is then deleted by using the *delete[]* function on the pointer.
 
 
 **The Code:**
@@ -549,8 +550,9 @@ The stored values are:
 ## Problem 6
 #### Define a struct named Date to keep track of dates. Provide functions that read dates from an input and finally display dates as an output.
 
-The struct *Date* is deklared before main and is given to integer variables and one string variable, the struct variable is called *myDate*. The user is then prompted to input the day, month and year, the values are fed to *myDate* in to the right variables.  
-This program is quite simple and may be proned to errors as the program does not check if the input days are correct according to the given month or even if the string given is a valid month.
+The struct *Date* is declared before main and is given to integer variables and one string variable, the struct variable is called *myDate*. The user is then prompted to input the day, month and year, the values are fed to *myDate* in to the right variables.  
+This program is quite simple and may be prone to errors as the program does not check if the input days are correct per the given month or even if the string given is a valid month.
+
 
 **The Code:**
 ```C++
@@ -604,8 +606,9 @@ You entered the following date:15/January/2017
 ## Problem 7
 #### Write a C++ program with a class having two private variables and one member function which will return the area of a triangle.
 
-The Class is initalized with two private variables *height* and *length* and two public member functions. The *set_values* function is used to access the private variables in the class and assign them values. The *triangleArea* takes the *length* and *height* multiplies them and divides them by 2, the function returns the area.
-In main, the variables are declared and the values are inputed by the user. The object triangle of type triangleArea i deklared and the values of the triangle are set by using the function *set_values*, the area is calculated and printed out.
+The Class is initialized with two private variables *height* and *length* and two public member functions. The *set_values* function is used to access the private variables in the class and assign them values. The *triangleArea* takes the *length* and *height* multiplies them and divides them by 2, the function returns the area.
+In main, the variables are declared and the values are inputted by the user. The object triangle of type triangleArea i declared and the values of the triangle are set by using the function *set_values*, the area is calculated and printed out.
+
 
 **The Code:**
 ```C++
@@ -660,7 +663,7 @@ The area of the triangle is:75
 ## Problem 8
 #### Write a C++ program with a class that takes 10 input integers in the main function and pass them to the default constructor of the class. Finally, your program should return (display)the sum of the 10 input numbers.
 
-The class Array is used to collect the values and calculate the sum. The class has one private variable of type int array with a set number of elements, and three member functions *Array()*, *setValues()* and *addValues*. The *Array()* is actually a constructor and is used to fill the array with zero's and tell the user that the object has been created. The *setValues* function uses a for-loop to fill  the array elements, it takes an integer values as input and fills the elements using the variable. When the values are filled, the *addValues* function is used to calculate the sum of alle the array elements and return the sum.
+The class Array is used to collect the values and calculate the sum. The class has one private variable of type int array with a set number of elements, and three member functions *Array()*, *setValues()* and *addValues*. The *Array()* is actually a constructor and is used to fill the array with zero's and tell the user that the object has been created. The *setValues* function uses a for-loop to fill the array elements, it takes an integer values as input and fills the elements using the variable. When the values are filled, the *addValues* function is used to calculate the sum of all the array elements and return the sum.
 
 **The Code:**
 ```C++
@@ -744,8 +747,9 @@ The sum of the values are = 748
 ## Problem 9
 #### Perform addition operation on complex data using class and object. The program should ask for real and imaginary part of two complex numbers, and display the real and imaginary parts of their sum.
 
-The program uses a Class called imNumber which has two private double variables, one public constructor and three public member functions. The constructor sets the img and real variables to zero and assigns r to real and i to img. The *setNumber* function is used to set the real and imaginary values of the complex number, it prompts the user to input the real and imaginary number and uses the *this* function to achieve this.
-The *add* function uses an object in order to collect the sum of the imaginary number and the real number, the object is then return when the sum has been added up. This is done by using the *this* function which gets the value of the object and sums it with the second function. The final function *printNumber* displays the value of the complex number. In the main function three object are declared, two for the complex numbers and one for the results. The values are set, the numbers are added and then displayed using the class functions.
+The program uses a Class called imNumber which has two private double variables, one public constructor and three public member functions. The constructor sets the img and real variables to zero and assigns *r* to *real* and *i* to *img*. The *setNumber* function is used to set the real and imaginary values of the complex number, it prompts the user to input the real and imaginary number and uses the *this* function to achieve this.
+The *add* function uses an object to collect the sum of the imaginary number and the real number, the object is then return when the sum has been added up. This is done by using the *this* function which gets the value of the object and sums it with the second function. The final function *printNumber* displays the value of the complex number. In the main function three object are declared, two for the complex numbers and one for the results. The values are set, the numbers are added and then displayed using the class functions.
+
 
 **The Code:**
 ```C++
